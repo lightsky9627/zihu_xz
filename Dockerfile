@@ -8,8 +8,10 @@ WORKDIR /app
 # libgl1-mesa-glx: for cv2
 # libglib2.0-0: for cv2
 RUN apt-get update && apt-get install -y \
-    libgl1-mesa-glx \
+    libgl1 \
     libglib2.0-0 \
+    libsm6 \
+    libxext6 \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy the current directory contents into the container at /app

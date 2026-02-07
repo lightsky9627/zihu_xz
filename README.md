@@ -140,6 +140,7 @@ docker run --rm -p 5000:5000 registry.cn-xxx.aliyuncs.com/xxx/zhihu2markdown:lat
 
 ## 5. 更新日志
 
+* 2026-02-07：修复 Docker 构建失败问题（替换 `libgl1-mesa-glx` 为 `libgl1`）。
 * 2025-03-10：添加 TamperMonkey 脚本，优化下载体验。
 * 2025-03-03：添加日志记录；专栏下载报错跳过；添加 Dockerfile。
 * 2025-01-25：新增微信公众号文章下载功能；增加 requirements.txt 文件。
