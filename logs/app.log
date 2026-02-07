@@ -1,0 +1,41 @@
+2026-02-07 18:13:10,793 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://198.18.0.1:5000
+2026-02-07 18:13:10,794 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-07 18:13:16,613 - werkzeug - INFO - 127.0.0.1 - - [07/Feb/2026 18:13:16] "GET / HTTP/1.1" 200 -
+2026-02-07 18:13:46,742 - web_app - INFO - Successfully processed https://www.zhihu.com/question/343632603/answer/1452954680, title: (20240311)ÔõÑù²ÅÄÜÈÃÒ»¸öÓ×ÖÉµÄÈËÕæÕı³É³¤_³Ìæä
+2026-02-07 18:13:46,759 - app - ERROR - Failed to remove zhihu: [WinError 5] ¾Ü¾ø·ÃÎÊ¡£: 'zhihu'
+2026-02-07 18:13:46,771 - werkzeug - INFO - 127.0.0.1 - - [07/Feb/2026 18:13:46] "POST / HTTP/1.1" 200 -
+2026-02-07 18:13:52,129 - web_app - INFO - Successfully processed https://www.zhihu.com/question/343632603/answer/1452954680, title: (20240311)ÔõÑù²ÅÄÜÈÃÒ»¸öÓ×ÖÉµÄÈËÕæÕı³É³¤_³Ìæä
+2026-02-07 18:13:52,143 - app - ERROR - Failed to remove zhihu: [WinError 5] ¾Ü¾ø·ÃÎÊ¡£: 'zhihu'
+2026-02-07 18:13:52,153 - werkzeug - INFO - 127.0.0.1 - - [07/Feb/2026 18:13:52] "POST / HTTP/1.1" 200 -
+2026-02-07 18:13:58,750 - web_app - INFO - Successfully processed https://www.zhihu.com/question/343632603/answer/1452954680, title: (20240311)ÔõÑù²ÅÄÜÈÃÒ»¸öÓ×ÖÉµÄÈËÕæÕı³É³¤_³Ìæä
+2026-02-07 18:13:58,788 - werkzeug - INFO - 127.0.0.1 - - [07/Feb/2026 18:13:58] "POST / HTTP/1.1" 200 -
+2026-02-07 18:13:59,112 - web_app - INFO - Successfully processed https://www.zhihu.com/question/343632603/answer/1452954680, title: (20240311)ÔõÑù²ÅÄÜÈÃÒ»¸öÓ×ÖÉµÄÈËÕæÕı³É³¤_³Ìæä
+2026-02-07 18:13:59,140 - web_app - INFO - Successfully processed https://www.zhihu.com/question/343632603/answer/1452954680, title: (20240311)ÔõÑù²ÅÄÜÈÃÒ»¸öÓ×ÖÉµÄÈËÕæÕı³É³¤_³Ìæä
+2026-02-07 18:13:59,141 - app - ERROR - Exception on / [POST]
+Traceback (most recent call last):
+  File "app.py", line 84, in index
+    os.chdir(old_cwd)
+FileNotFoundError: [WinError 2] ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÎÄ¼ş¡£: 'C:\\Users\\Polish\\OneDrive\\Desktop\\zhihu-download\\zhihu\\zhihu\\zhihu'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Anaconda\envs\zhihu2Mark\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Anaconda\envs\zhihu2Mark\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Anaconda\envs\zhihu2Mark\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Anaconda\envs\zhihu2Mark\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 99, in index
+    os.chdir(old_cwd)
+FileNotFoundError: [WinError 2] ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÎÄ¼ş¡£: 'C:\\Users\\Polish\\OneDrive\\Desktop\\zhihu-download\\zhihu\\zhihu\\zhihu'
+2026-02-07 18:13:59,144 - werkzeug - INFO - 127.0.0.1 - - [07/Feb/2026 18:13:59] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2026-02-07 18:13:59,268 - app - ERROR - Failed to remove zhihu: [WinError 5] ¾Ü¾ø·ÃÎÊ¡£: 'zhihu'
+2026-02-07 18:13:59,278 - werkzeug - INFO - 127.0.0.1 - - [07/Feb/2026 18:13:59] "POST / HTTP/1.1" 200 -
+2026-02-07 18:13:59,357 - web_app - INFO - Successfully processed https://www.zhihu.com/question/343632603/answer/1452954680, title: (20240311)ÔõÑù²ÅÄÜÈÃÒ»¸öÓ×ÖÉµÄÈËÕæÕı³É³¤_³Ìæä
+2026-02-07 18:13:59,371 - werkzeug - INFO - 127.0.0.1 - - [07/Feb/2026 18:13:59] "POST / HTTP/1.1" 200 -
